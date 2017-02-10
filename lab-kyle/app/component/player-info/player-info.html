@@ -1,0 +1,19 @@
+<section class="player-info">
+  <h2>Player Info</h2>
+
+  <ul>
+    <li>
+      <span>Name:</span>
+      <span>{{ playerInfoCtrl.player.name }}</span>
+    </li>
+    <li>
+      <span>Current Location:</span>
+      <span>{{ playerInfoCtrl.player.location }}</span>
+    </li>
+    <li>
+      <span>Pokemon:</span>
+      <span ng-repeat>{{ playerInfoCtrl.player.pokemon }}</span>
+    </li>
+  </ul>
+
+</section>
