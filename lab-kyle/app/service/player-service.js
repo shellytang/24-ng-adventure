@@ -15,7 +15,8 @@ function playerService($q, $log, mapService) {
   let player = service.player = {
     name: 'Red',
     location: 'home',
-    pokemon: ['Charmander', 'Squirtle']
+    pokeballs: 0,
+    pokemon: []
   }
 
   let history = service.history = [
@@ -42,9 +43,21 @@ function playerService($q, $log, mapService) {
         return reject('you cannot go in that direction')
       }
 
+      if (newLocation === 'center') player.pokeballs ++
+
+      if (newLocation === 'route1' && player.pokeballs) {
+        player.pokemon.push('charmander')
+        player.pokeballs --
+      }
+
+      if (newLocation === 'route2' && player.pokeballs) {
+        player.pokemon.push('squirtle')
+        player.pokeballs --
+      }
+
       history.unshift({
         turn,
-        location: player.location,
+        location: newLocation,
         desc: mapService.mapData[newLocation].desc
       })
 

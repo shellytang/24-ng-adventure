@@ -14,7 +14,7 @@ ngAdventure.controller('GamePadController', ['$log', 'playerService', GamePadCon
 function GamePadController($log, playerService) {
   $log.debug('GamePadController')
 
-  this.directions = ['North', 'South', 'East', 'West']
+  this.directions = ['north', 'south', 'east', 'west']
   this.moveDirection = this.directions[0]
 
   this.movePlayer = function() {
@@ -23,7 +23,7 @@ function GamePadController($log, playerService) {
         $log.log(`player at ${location}`)
       })
       .catch(err => {
-        $log.errory(err)
+        $log.error(err)
       })
   }
 }
