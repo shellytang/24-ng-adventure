@@ -53,5 +53,5 @@ function playerService($q, $log, mapService) {
     })
   }
 
-  return service;
+  return service
 }

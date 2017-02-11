@@ -1,6 +1,6 @@
 <section class="player-info">
   <h2>Player Info</h2>
-
+  {{console.log(playerInfoCtrl)}}
   <ul>
     <li>
       <span>Name:</span>
@@ -12,7 +12,9 @@
     </li>
     <li>
       <span>Pokemon:</span>
-      <span ng-repeat>{{ playerInfoCtrl.player.pokemon }}</span>
+      <ul>
+        <li ng-repeat="pokemon in playerInfoCtrl.player.pokemon">{{ pokemon }}</li>
+      </ul>
     </li>
   </ul>
 
