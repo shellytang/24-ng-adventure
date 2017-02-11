@@ -1,0 +1,10 @@
+<section class="game-pad">
+  <h2>Game Pad</h2>
+
+  <select ng-model="gamePadCtrl.moveDirection">
+    <option ng-repeat="direction in gamePadCtrl.directions" value="{{ direction }}">
+      {{ direction }}
+    </option>
+  </select>
+
+</section>
