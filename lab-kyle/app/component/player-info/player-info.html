@@ -15,8 +15,8 @@
       <span>{{ playerInfoCtrl.player.pokeballs }}</span>
     </li>
     <li>
-      <span>Pokemon:</span>
-      <span ng-repeat="pokemon in playerInfoCtrl.player.pokemon">{{ pokemon }} </span>
+      <p>Pokemon:</p>
+      <img ng-repeat="pokemon in playerInfoCtrl.player.pokemon" src="{{ pokemon }}">
     </li>
   </ul>
 

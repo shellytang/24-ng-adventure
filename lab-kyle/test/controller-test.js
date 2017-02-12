@@ -16,7 +16,6 @@ describe('App Controllers', function() {
       })
     })
 
-
     it('has a history property that is an array with one item', () => {
       expect(Array.isArray(this.historyCtrl.history)).toBe(true)
       expect(this.historyCtrl.history.length).toBe(1)

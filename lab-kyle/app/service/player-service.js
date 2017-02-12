@@ -3,9 +3,9 @@
 const angular = require('angular')
 const ngAdventure = angular.module('ngAdventure')
 
-ngAdventure.factory('playerService', ['$q', '$log', 'mapService', playerService])
+ngAdventure.factory('playerService', ['$q', '$log', '$http', 'mapService', playerService])
 
-function playerService($q, $log, mapService) {
+function playerService($q, $log, $http, mapService) {
   $log.debug('player service')
 
   let service = {}
@@ -34,6 +34,10 @@ function playerService($q, $log, mapService) {
       let current = player.location
       let newLocation = mapService.mapData[current][direction]
 
+      let charSprite = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png'
+      let squirSprite = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png'
+      let pikaSprite = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png'
+
       if (!newLocation) {
         history.unshift({
           turn,
@@ -46,17 +50,33 @@ function playerService($q, $log, mapService) {
       if (newLocation === 'center') player.pokeballs ++
 
       if (newLocation === 'route1' && player.pokeballs) {
-        if (player.pokemon.indexOf('charmander') === -1) {
-          player.pokemon.push('charmander')
-          player.pokeballs --
+        if (player.pokemon.indexOf(charSprite) === -1) {
+          $http.get('http://pokeapi.co/api/v2/pokemon/charmander')
+            .then(response => {
+              player.pokemon.push(response.data.sprites.front_default)
+              player.pokeballs --
+            })
         }
-        if (player.pokemon.length === 2 && player.pokeballs) player.pokemon.push('pikachu')
+        if (player.pokemon.length === 2 && player.pokeballs) {
+          if (player.pokemon.indexOf(pikaSprite) === -1 ) {
+            $http.get('http://pokeapi.co/api/v2/pokemon/pikachu')
+              .then(response => {
+                $log.log(response)
+                player.pokemon.push(response.data.sprites.front_default)
+                player.pokeballs --
+              })
+          }
+        }
       }
 
       if (newLocation === 'route2' && player.pokeballs) {
-        if (player.pokemon.indexOf('squirtle') === -1) {
-          player.pokemon.push('squirtle')
-          player.pokeballs --
+        if (player.pokemon.indexOf(squirSprite) === -1) {
+          $http.get('http://pokeapi.co/api/v2/pokemon/squirtle')
+            .then(response => {
+              $log.log(response.data.sprites.front_default)
+              player.pokemon.push(response.data.sprites.front_default)
+              player.pokeballs --
+            })
         }
       }
 
