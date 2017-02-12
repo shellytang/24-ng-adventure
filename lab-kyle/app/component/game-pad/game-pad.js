@@ -22,7 +22,7 @@ function GamePadController($log, playerService) {
     playerService.movePlayer(this.moveDirection)
       .then( location => {
         $log.log(`player at ${location}`)
-        if ((location === 'arena') && (playerService.player.pokemon.length === 2)) {
+        if ((location === 'arena') && (playerService.player.pokemon.length >= 2)) {
           this.hidePad = true
           this.showResult = false
           this.result = 'You win. Contratulations, you rock!'

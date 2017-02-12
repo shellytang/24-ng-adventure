@@ -46,13 +46,18 @@ function playerService($q, $log, mapService) {
       if (newLocation === 'center') player.pokeballs ++
 
       if (newLocation === 'route1' && player.pokeballs) {
-        player.pokemon.push('charmander')
-        player.pokeballs --
+        if (player.pokemon.indexOf('charmander') === -1) {
+          player.pokemon.push('charmander')
+          player.pokeballs --
+        }
+        if (player.pokemon.length === 2 && player.pokeballs) player.pokemon.push('pikachu')
       }
 
       if (newLocation === 'route2' && player.pokeballs) {
-        player.pokemon.push('squirtle')
-        player.pokeballs --
+        if (player.pokemon.indexOf('squirtle') === -1) {
+          player.pokemon.push('squirtle')
+          player.pokeballs --
+        }
       }
 
       history.unshift({

@@ -33,6 +33,7 @@ function mapService($log) {
     trail: {
       desc: 'you are on the trail',
       north: 'route2',
+      east: 'route1',
       south: 'arena'
     },
     route2: {
