@@ -41,7 +41,6 @@ function mapService($log) {
     },
     arena: {
       desc: 'you arrived at the arena',
-      north: 'trail'
     }
   }
 

@@ -1,3 +1,14 @@
+@import '../../scss/lib/theme/_vars';
+
+game-pad {
+  min-width: 45%;
+}
+
 .game-pad {
-  background-color: #dcfcbf
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $light;
+  min-height: 100%;
 }

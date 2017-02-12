@@ -1,6 +1,18 @@
-.player-info {
-  background-color: grey;
-  li {
-    list-style: none
+@import '../../scss/lib/theme/_vars';
+
+player-info {
+  min-width: 45%;
+
+  .player-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $light;
+    min-height: 100%;
+
+    li {
+      list-style: none
+    }
   }
 }

@@ -1,3 +1,12 @@
+// base
+@import './lib/base/_base';
+@import './lib/base/_reset';
+
+// layout
+@import './lib/layout/_content';
+@import './lib/layout/_header';
+@import './lib/layout/_footer';
+
 // component
 @import '../component/player-info/player-info';
 @import '../component/game-pad/game-pad';
