@@ -1,0 +1,9 @@
+{
+  "name": "NG-Adventure",
+  "version": "1.0.0",
+  "description": "CF lab 24 ",
+  "main": "entry.js",
+  "repository": {},
+  "author": "Carolina Ceja",
+  "license": "MIT"
+}
