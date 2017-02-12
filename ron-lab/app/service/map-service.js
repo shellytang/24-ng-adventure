@@ -72,7 +72,8 @@ function mapService($log) {
     Utah: {
       desc: "Welcome to Utah, the Beehive State.",
       south: "Arizona",
-      north: "SouthernIdaho"
+      north: "SouthernIdaho",
+      west: "Nevada"
     },
     NewMexico: {
       desc: "Welcome to New Mexico the land of enchantment",
@@ -80,7 +81,7 @@ function mapService($log) {
       west: "Arizona",
     },
     Colorado: {
-      desc: "Welcome to Colorado, The Centennial State.",
+      desc: "Welcome to Colorado, The Centennial State. You have reached the highest point in the Rockies, Congratulations! Mount Elbert is 14,440 feet tall, enjoy the view.",
       south: "NewMexico",
       north: "Wyoming",
       west: "Utah"
