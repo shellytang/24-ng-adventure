@@ -34,10 +34,10 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader',
       },
-      // {
-      //   test: /\.scss$/,
-      //   loader: ExtractTextPlugin.extract('style', 'css!resolve-url!sass?sourceMap'),
-      // },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
       {
         test: /\.(woff|ttf|svg|eot).*/,
         loader: 'url?limit=10000&name=font/[hash].[ext]',

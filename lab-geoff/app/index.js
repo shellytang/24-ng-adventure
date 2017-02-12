@@ -1,4 +1,4 @@
-//require main.scss
+require ('./scss/main.scss');
 
 let angular = require('angular');
 angular.module('mazeApp', []);
