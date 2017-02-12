@@ -16,11 +16,23 @@ function GamePadController($log, playerService) {
 
   this.directions = ['north', 'south', 'east', 'west']
   this.moveDirection = this.directions[0]
+  this.showResult = true
 
   this.movePlayer = function() {
     playerService.movePlayer(this.moveDirection)
       .then( location => {
         $log.log(`player at ${location}`)
+        if ((location === 'arena') && (playerService.player.pokemon.length === 2)) {
+          this.hidePad = true
+          this.showResult = false
+          this.result = 'Win'
+          return
+        }
+        if (location === 'arena') {
+          this.hidePad = true
+          this.showResult = false
+          this.result = 'Lose'
+        }
       })
       .catch(err => {
         $log.error(err)
