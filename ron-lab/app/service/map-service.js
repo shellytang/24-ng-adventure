@@ -11,38 +11,79 @@ function mapService($log) {
   let service = {};
 
   service.mapData = {
-    cabin: {
-      desc: "message from the cabin",
-      south: "trail"
+    Washington: {
+      desc: "You are in the Evergreen State, visit Seattle The Emerald City",
+      east: "You are in Northern Idaho",
+      south: "Oregon"
     },
-    trail: {
-      desc: "message from the trail",
-      north: "cabin",
-      east: "gate",
-      south: "pit"
+    Oregon: {
+      desc: "Welocome to the Beaver State, visit Portland The City of Roses.",
+      north: "Washington",
+      east: "Southern Idaho",
+      south: "NorthernCalifornia"
     },
-    pit: {
-      desc: "message from the pit",
-      north: "trail"
+    NorthernIdaho: {
+      desc: "You are in Northern Idaho, enjoy the Rockies.",
+      east: "Montana",
+      south: "SouthernIdaho",
+      west: "Washington"
     },
-    gate: {
-      desc: "message from the gate",
-      west: "trail",
-      east: "castle"
+    Montana: {
+      desc: "Welcome to Montana, big sky country.",
+      south: "Wyoming",
+      west: "NorthernIdaho"
     },
-    castle: {
-      desc: "message from the castle",
-      west: "gate",
-      south: "corridor"
+    SouthernIdaho: {
+      desc: "You are in Southern Idaho, visit the capital city of Boise.",
+      east: "Wyoming",
+      south: "Nevada",
+      north: "SouthernIdaho"
     },
-    corridor: {
-      desc: "message from the corridor",
-      north: "castle",
-      east: "snackroom"
+    Wyoming: {
+      desc: "Welcome to Wyoming, see the Tetons.",
+      south: "Colorado",
+      north: "Montana",
+      west: "SouthernIdaho"
     },
-    snackroom: {
-      desc: "message from the snack room",
-      west: "corridor"
+    NorthernCalifornia: {
+      desc: "Welcome to the Sunshine State.",
+      east: "Nevada",
+      north: "Oregon",
+      south: "SouthernCalifornia"
+    },
+    Nevada: {
+      desc: "Welcome to Nevada, remember what happens in Vegas, stays in Vegas",
+      west: "NorthernCalifornia",
+      south: "SouthernCalifornia",
+      east: "Utah",
+      north: "Oregon"
+    },
+    SouthernCalifornia: {
+      desc: "Welocome to Southern California, enjoy the beaches.",
+      east: "Arizona",
+      north: "NorthernCalifornia"
+    },
+    Arizona: {
+      desc: "Welcome to Arizona, our Universities are okay.",
+      east: "NewMexico",
+      north: "Utah",
+      west: "SouthernCalifornia"
+    },
+    Utah: {
+      desc: "Welcome to Utah, the Beehive State.",
+      south: "Arizona",
+      north: "SouthernIdaho"
+    },
+    NewMexico: {
+      desc: "Welcome to New Mexico the land of enchantment",
+      north: "Colorado",
+      west: "Arizona",
+    },
+    Colorado: {
+      desc: "Welcome to Colorado, The Centennial State.",
+      south: "NewMexico",
+      north: "Wyoming",
+      west: "Utah"
     }
   };
 
