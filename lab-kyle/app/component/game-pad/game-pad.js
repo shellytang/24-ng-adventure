@@ -16,13 +16,11 @@ function GamePadController($log, playerService) {
 
   this.directions = ['north', 'south', 'east', 'west']
   this.moveDirection = this.directions[0]
-  this.location = playerService.player.location
 
   this.movePlayer = function() {
     playerService.movePlayer(this.moveDirection)
       .then( location => {
         $log.log(`player at ${location}`)
-        this.location = location
       })
       .catch(err => {
         $log.error(err)
