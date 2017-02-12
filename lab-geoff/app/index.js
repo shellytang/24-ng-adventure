@@ -1,7 +1,7 @@
 //require main.scss
 
 let angular = require('angular');
-angular.module('maze', []);
+angular.module('mazeApp', []);
 
 //require services
 
