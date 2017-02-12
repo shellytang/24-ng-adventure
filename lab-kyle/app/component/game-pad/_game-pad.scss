@@ -11,4 +11,9 @@ game-pad {
   align-items: center;
   background-color: $light;
   min-height: 90%;
+  border-radius: 75px;
+
+  h3 {
+    font-size: 1.25em;
+  }
 }

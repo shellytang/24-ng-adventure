@@ -25,13 +25,13 @@ function GamePadController($log, playerService) {
         if ((location === 'arena') && (playerService.player.pokemon.length === 2)) {
           this.hidePad = true
           this.showResult = false
-          this.result = 'Win'
+          this.result = 'You win. Contratulations, you rock!'
           return
         }
         if (location === 'arena') {
           this.hidePad = true
           this.showResult = false
-          this.result = 'Lose'
+          this.result = 'You lost. Did you have enough pokemon to win in the Arena?'
         }
       })
       .catch(err => {
