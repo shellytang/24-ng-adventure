@@ -1,0 +1,23 @@
+{
+  "name": "lab-24-ng-adventure",
+  "version": "1.0.0",
+  "main": "entry.js",
+  "repository": "https://github.com/jessicamvs/lab-24-ng-adventure.git",
+  "author": "Jessica Vasquez-Soltero <jmichellevs@gmail.com>",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack-dev-server --inline --hot",
+    "lint": "eslint app",
+    "test": "karma start --single-run",
+    "test-watch": "karma start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "karma": "^1.4.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
