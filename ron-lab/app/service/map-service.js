@@ -13,7 +13,7 @@ function mapService($log) {
   service.mapData = {
     Washington: {
       desc: "You are in the Evergreen State, visit Seattle The Emerald City",
-      east: "You are in Northern Idaho",
+      east: "NorthernIdaho",
       south: "Oregon"
     },
     Oregon: {
@@ -29,7 +29,7 @@ function mapService($log) {
       west: "Washington"
     },
     Montana: {
-      desc: "Welcome to Montana, big sky country.",
+      desc: "Welcome to Montana, you are in Big Sky Country.",
       south: "Wyoming",
       west: "NorthernIdaho"
     },
