@@ -7,14 +7,21 @@ mazeApp.component('gamePad', {
   controllerAs: 'gamePadCtrl'
 });
 
-//player service needs to be added into array
-mazeApp.controller('GamePadController', ['$log', GamePadController]);
+mazeApp.controller('GamePadController', ['$log', 'playerService', GamePadController]);
 
-//whatever service should be added in here
-function GamePadController($log) {
+function GamePadController($log, playerService) {
   $log.debug('GamePadController');
 
-  //other gamepad stuff here
-  //choose direction
+  this.directions = ['north', 'east', 'south', 'west'];
+  this.moveDirection = this.directions[0];
 
+  this.movePlayer = function() {
+    playerService.movePlayer(this.moveDirection)
+    .then(location => {
+      $log.log(location);
+    })
+    .catch(err => {
+      $log.error(err);
+    });
+  };
 }
