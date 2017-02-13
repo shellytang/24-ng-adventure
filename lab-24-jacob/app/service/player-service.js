@@ -12,9 +12,10 @@ function playerService($q, $log, mapService) {
 
   let turn = 0;
   let player = service.player = {
-    name: 'scott',
+    name: 'Charlie',
     location: 'cabin',
-    hp: 16
+    desc: 'Scott Schmidt was caught hacking the mainframe from a computer in the public library. Rookie mistake Scott! Now you have to free him from his prison cell. Travel to the different areas and collect gold to buy something that could help free Scott!',
+    gold: 0,
   };
 
   let history = service.history = [
@@ -22,7 +23,7 @@ function playerService($q, $log, mapService) {
       turn,
       desc: 'Welcome to Scott\'s wacky and crazy adventure!',
       location: 'cabin',
-      hp: player.hp
+      hp: player.gold
     }
   ];
 
@@ -32,24 +33,25 @@ function playerService($q, $log, mapService) {
 
       let current = player.location;  //starting point
       let newLocation = mapService.mapData[current][direction];
-      //user inputs 'direction' when playing game
+      let newDesc = mapService.mapData[newLocation].desc;
+      console.log(newDesc);
 
       if(!newLocation) {
         history.unshift({  //adds this object to beginning of history array
           turn,
           desc: 'You have run into a wall',
           location: player.location,
-          hp: player.hp
+          gold: player.gold
         });
         return reject('no room in that direction');
       }
       history.unshift ({
         turn,location: player.location,
-        desc: mapService.mapData[newLocation].desc,
-        hp: player.hp
+        desc: mapService.mapData[current].desc,
       });
       //Reassign the player's location
       player.location = newLocation;
+      player.desc = newDesc;
       return resolve(player.location);
     });
   };
