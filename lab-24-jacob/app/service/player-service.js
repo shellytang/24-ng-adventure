@@ -33,9 +33,6 @@ function playerService($q, $log, mapService) {
 
       let current = player.location;  //starting point
       let newLocation = mapService.mapData[current][direction];
-      let newDesc = mapService.mapData[newLocation].desc;
-      console.log(newDesc);
-
       if(!newLocation) {
         history.unshift({  //adds this object to beginning of history array
           turn,
@@ -45,6 +42,7 @@ function playerService($q, $log, mapService) {
         });
         return reject('no room in that direction');
       }
+      let newDesc = mapService.mapData[newLocation].desc;
       history.unshift ({
         turn,location: player.location,
         desc: mapService.mapData[current].desc,
@@ -53,6 +51,19 @@ function playerService($q, $log, mapService) {
       player.location = newLocation;
       player.desc = newDesc;
       return resolve(player.location);
+    });
+  };
+
+  service.takeGold = function() {
+    return new $q((resolve, reject) => {
+      let gold = mapService.mapData[player.location].gold; //not DRY I know...
+      if(!gold) {
+        return reject('there is no gold to be taken');
+      }
+
+      player.gold += gold;
+      mapService.mapData[player.location].gold = 0;
+      return resolve(player.gold);
     });
   };
   return service;

@@ -26,4 +26,13 @@ function GamePadController($log, playerService) {
       $log.error(err);
     });
   };
+  this.takeGold = function() {
+    playerService.takeGold()
+    .then(gold => {
+      $log.log(`player took ${gold} gold pieces`);
+    })
+    .catch(err => {
+      $log.error(err);
+    });
+  };
 }

@@ -14,7 +14,8 @@ function mapService($log) {
   service.mapData = {
     cabin: {
       desc: 'you\'re at the cabin where you started, go south to the farm',
-      south: 'farm'
+      south: 'farm',
+      gold: 0
     },
     farm: {
       desc: 'you\'re on the farm, go north to the cabin, east to the creamery, or south to Orange County',
