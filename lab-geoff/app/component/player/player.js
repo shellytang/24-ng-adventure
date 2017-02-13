@@ -2,7 +2,7 @@ let angular = require('angular');
 let mazeApp = angular.module('mazeApp');
 
 mazeApp.component('player', {
-  template: require('./player.scss'),
+  template: require('./player.html'),
   controller: 'PlayerController',
   controllerAs: 'playerCtrl'
 });
