@@ -11,38 +11,38 @@ function mapService($log) {
   let service = {};
 
   service.mapData = {
-    cabin: {
-      desc: "message from the cabin",
-      south: "trail"
+    great_hall: { //cabin
+      desc: "Welcome to the Great Hall!  Watch out for Nearly Headless Nick.",
+      south: "hagrid's hut"
     },
-    trail: {
-      desc: "message from the trail",
-      north: "cabin",
-      east: "gate",
-      south: "pit"
+    hagrids_hut: { //trail
+      desc: "You're in Hagrid's hut.  Watch out for spiders or the blast ended skrewt.",
+      north: "great hall",
+      east: "potions classroom",
+      south: "forbidden forest"
     },
-    pit: {
-      desc: "message from the pit",
-      north: "trail"
+    forbidden_forest: { //pit
+      desc: "The forest is strickly forbidden to all students.  There are worse things than Centaurs here.",
+      north: "hagrid's hut"
     },
-    gate: {
-      desc: "message from the gate",
-      west: "trail",
-      east: "castle"
+    potions_classroom: { //gate
+      desc: "You are in the Potions Classroom.  Professor Snape is not happy that you're so late.",
+      west: "hagrid's hut",
+      east: "charms classroom"
     },
-    castle: {
-      desc: "message from the castle",
-      west: "gate",
-      south: "corridor"
+    charms_classroom: { //castle
+      desc: "Professor Flitwick welcomes you to Charms.  Remember: it's Wingardium LeviOsa, not LevioSA.",
+      west: "potions classroom",
+      south: "divination classroom"
     },
-    corridor: {
-      desc: "message from the corridor",
-      north: "castle",
-      east: "snackroom"
+    divination_classroom: { //corridor
+      desc: "You are in Divination.  Hope you don't see a Grim in your tea leaves.",
+      north: "charms classroom",
+      east: "room of requirement"
     },
-    snackroom: {
-      desc: "message from the snack room",
-      west: "corridor"
+    room_of_requirement: { //snackroom
+      desc: "The Room of Requirement.  If you have to ask, you'll never know.  If you know, you need only ask.",
+      west: "divination classroom"
     }
   };
 

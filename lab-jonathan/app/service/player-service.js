@@ -13,15 +13,15 @@ function playerService($q, $log, mapService) {
   let turn = 0;
   let player = service.player = {
     name: 'bnates',
-    location: 'cabin',
+    location: 'great hall',
     hp: 16
   };
 
   let history = service.history = [
     {
       turn,
-      desc: 'Welcome to ngAdventure',
-      location: 'cabin',
+      desc: 'Welcome to ng_HP_Adventure',
+      location: 'great hall',
       hp: player.hp
     }
   ];
