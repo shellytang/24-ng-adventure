@@ -4,7 +4,7 @@ require('./scss/main.scss');
 
 const angular = require('angular');
 
-angular.module('Scott-Adventure', []);
+angular.module('scottAdventure', []);
 
 require('./service/map-service.js');
 require('./service/player-service.js');

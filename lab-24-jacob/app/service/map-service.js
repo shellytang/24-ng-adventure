@@ -1,7 +1,7 @@
 'use strict';
 
 const angular = require('angular');
-const scottAdventure = angular.module('Scott-Adventure');
+const scottAdventure = angular.module('scottAdventure');
 
 scottAdventure.factory('mapService', ['$log', mapService]);
 
@@ -46,4 +46,5 @@ function mapService($log) {
       west: 'corridor'
     }
   };
+  return service;
 }

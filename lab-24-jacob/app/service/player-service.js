@@ -1,7 +1,7 @@
 'use strict';
 
 const angular = require('angular');
-const scottAdventure = angular.module('Scott-Adventure');
+const scottAdventure = angular.module('scottAdventure');
 
 scottAdventure.factory('playerService', ['$q', '$log', 'mapService', playerService]);
 
