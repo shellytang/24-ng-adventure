@@ -13,7 +13,7 @@ function playerService($q, $log, mapService) {
   let turn = 0;
   let player = service.player = {
     name: 'Hans Steinbeck',
-    location: 'Willkomen zum Oktoberfest(Eingang)',
+    location: 'Entrance',
     hp: 20
   };
 
@@ -21,7 +21,7 @@ function playerService($q, $log, mapService) {
     {
       turn,
       desc: 'Welcome to Die Wies\'n',
-      location: 'Eingang(Entrance)',
+      location: 'Entrance',
       hp: player.hp
     }
   ];
