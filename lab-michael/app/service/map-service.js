@@ -12,37 +12,37 @@ function mapService($log) {
 
   service.mapData = {
     Entrance: {
-      desc: 'message from the entrance',
-      south: 'AugustinerFestzelt'
+      desc: 'Willkommen zum Oktoberfest!',
+      south: 'Augustiner_Festzelt'
     },
-    AugustinerFestzelt: {
-      desc: 'message from the AugustinerFestzelt',
+    Augustiner_Festzelt: {
+      desc: 'This is the Augustiner_Festzelt, Ein Prosit!',
       north: 'Entrance',
-      east: 'LowenbrauFestzelt',
-      south: 'PaulanerFestzelt'
+      east: 'Lowenbrau_Festzelt',
+      south: 'Paulaner_Festzelt'
     },
-    PaulanerFestzelt: {
-      desc: 'message from the PaulanerFestzelt',
-      north: 'AugustinerFestzelt'
+    Paulaner_Festzelt: {
+      desc: 'This is the Paulaner_Festzelt, bestes Witz Bier!',
+      north: 'Augustiner_Festzelt'
     },
-    LowenbrauFestzelt: {
-      desc: 'message from the LowenbrauFestzelt',
-      west: 'AugustinerFestzelt',
-      east: 'HofbrauhausFestzelt'
+    Lowenbrau_Festzelt: {
+      desc: 'This is the Lowenbrau_Festzelt, Gemütlichkeit!',
+      west: 'Augustiner_Festzelt',
+      east: 'Hofbrauhaus_Festzelt'
     },
-    HofbrauhausFestzelt: {
-      desc: 'message from the HofbrauhausFestzelt',
-      west: 'LowenbrauFestzelt',
-      south: 'SpatenhausFestzelt'
+    Hofbrauhaus_Festzelt: {
+      desc: 'This is the Hofbrauhaus_Festzelt, PROST!',
+      west: 'Lowenbrau_Festzelt',
+      south: 'Spatenhaus_Festzelt'
     },
-    SpatenhausFestzelt: {
-      desc: 'message from the SpatenhausFestzelt',
-      north: 'HofbrauhausFestzelt',
+    Spatenhaus_Festzelt: {
+      desc: 'message from the Spatenhaus_Festzelt, Home of the Optimator!',
+      north: 'Hofbrauhaus_Festzelt',
       east: 'Toiletten'
     },
     Toiletten: {
-      desc: 'message from the snack room',
-      west: 'SpatenhausFestzelt'
+      desc: 'You have crawled your way to the Pissior!',
+      west: 'Spatenhaus_Festzelt'
     }
   };
 

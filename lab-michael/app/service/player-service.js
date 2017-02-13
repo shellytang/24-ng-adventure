@@ -20,7 +20,7 @@ function playerService($q, $log, mapService) {
   let history = service.history = [
     {
       turn,
-      desc: 'Welcome to Die Wies\'n',
+      desc: 'Welcome to Oktoberfest',
       location: 'Entrance',
       hp: player.hp
     }
