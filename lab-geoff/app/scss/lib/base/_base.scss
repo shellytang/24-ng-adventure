@@ -2,8 +2,14 @@
 
 html, body {
   width: 75%;
-  height: 75%;
-  margin: 5% auto;
+  height: 100%;
+  // margin: 5% auto;
+  background-color: $color-background;
+  background: linear-gradient($color-background, $color-secondary);
+}
+
+body {
+  margin: auto;
 }
 
 h1 {
@@ -15,10 +21,6 @@ h2 {
   font-size: 1.5vw;
 }
 
-button {
+button, select{
   background: $color-button;
-
-  & :hover {
-    background: $color-secondary;
-  }
 }
