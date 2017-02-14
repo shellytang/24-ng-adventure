@@ -12,7 +12,7 @@ function playerService($q, $log, mapService) {
 
   let turn = 0;
   let player = service.player = {
-    name: 'bnates',
+    name: 'Harry',
     location: 'great hall',
     hp: 16
   };

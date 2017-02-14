@@ -6,7 +6,7 @@ const ngAdventure = angular.module('ngAdventure');
 ngAdventure.component('gamePad', {
   template: require('./game-pad.html'),
   controller: 'GamePadController',
-  controllerAs: 'gamePadCtrl'
+  controllerAs: 'gamePadCtrl',
 });
 
 ngAdventure.controller('GamePadController', ['$log',  'playerService', GamePadController]);
@@ -26,4 +26,4 @@ function GamePadController($log, playerService) {
       $log.error(err);
     });
   };
-};
+}
