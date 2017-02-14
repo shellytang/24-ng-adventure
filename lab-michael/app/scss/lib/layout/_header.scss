@@ -1,12 +1,12 @@
 @import "../theme/_theme";
 
 header {
-  height: 10vw;
-  background: $brand-secondary;
+  min-height: 8vw;
+  background: $brand-primary;
 
   h1 {
     padding-top: 2.5vw;
     text-align: center;
-    color: $btn-primary;
+    color: $btn-primary * 2;
   }
 }

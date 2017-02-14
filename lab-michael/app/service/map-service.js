@@ -22,7 +22,7 @@ function mapService($log) {
       south: 'Paulaner_Festzelt'
     },
     Paulaner_Festzelt: {
-      desc: 'This is the Paulaner_Festzelt, bestes Witz Bier!',
+      desc: 'This is the Paulaner_Festzelt, Zicke zacke, zicke zacke, hoi hoi hoi!',
       north: 'Augustiner_Festzelt'
     },
     Lowenbrau_Festzelt: {

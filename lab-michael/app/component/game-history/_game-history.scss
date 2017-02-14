@@ -1,18 +1,22 @@
 @import "../../scss/lib/theme/_theme";
 
 .history {
-  max-height: 300px;
+  max-width: 100%;
+  // max-height: 400px;
+  border: ridge 5px $silver / 2;
+  border-radius: 1em;
   overflow: auto;
-  background: $brand-primary;
-  color: $white;
+  background: lighten($brand-primary, 10%);
+  color: lighten($silver, 25%);
 
-  h2 {
-    padding: $gutter-sm $gutter-std;
+  h3 {
+    padding: $gutter-sm / 2;
+    font-size: 2vw;
   }
 
   span {
-    font-size: 2vw;
-    line-height: 1.5em;
+    font-size: 1.5vw;
+    // line-height: 1.5em;
 
     &:first-child {
       color: $brand-secondary;
@@ -26,12 +30,12 @@
   }
 
   ul {
-    padding: $gutter-std;
-    margin-bottom: $gutter-std;
+    padding: $gutter-sm / 2;
+    margin-bottom: $gutter-sm / 2;
     border-top: solid 1px $brand-secondary;
 
     li {
-      margin-bottom: $gutter-sm;
+      // margin-bottom: $gutter-sm / 2;
     }
   }
 }
