@@ -2,5 +2,6 @@
 
 .player {
   background: $color-main;
+  background: linear-gradient($color-tertiary, $color-main);
   float: right;
 }

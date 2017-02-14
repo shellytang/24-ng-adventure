@@ -3,9 +3,10 @@
 html, body {
   width: 75%;
   height: 100%;
-  // margin: 5% auto;
+  color: $font-color;
   background-color: $color-background;
   background: linear-gradient($color-background, $color-secondary);
+  text-align: center;
 }
 
 body {
@@ -13,8 +14,8 @@ body {
 }
 
 h1 {
-  font-size: 3vw;
-
+  font-size: 3.5vw;
+  font-weight: bolder;
 }
 
 h2 {
@@ -22,5 +23,13 @@ h2 {
 }
 
 button, select{
+  border: none;
   background: $color-button;
+  background: linear-gradient($color-button, $color-button-second);
+  transition: all 0.5s ease 0s;
+}
+
+button, select:hover {
+  background: $color-button-second;
+  background: linear-gradient($color-button-second, $color-button);
 }

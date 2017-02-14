@@ -4,6 +4,7 @@
   float: left;
   margin: 5%;
   background: $color-main;
+  background: linear-gradient($color-tertiary, $color-main);
   min-width: 45%;
 }
 ul {
