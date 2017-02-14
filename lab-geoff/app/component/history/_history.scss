@@ -1,0 +1,10 @@
+@import "../../scss/lib/theme/vars";
+
+.history {
+  float: left;
+  margin: 5%;
+}
+
+li {
+  border-top: solid .025vw $color-secondary;
+}
