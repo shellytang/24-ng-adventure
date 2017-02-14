@@ -13,16 +13,15 @@ function playerService($q, $log, mapService) {
   let turn = 0;
   let player = service.player = {
     name: 'Hans Steinbeck',
-    location: 'Willkomen zum Oktoberfest(Eingang)',
+    location: 'Entrance',
     hp: 20
   };
 
   let history = service.history = [
     {
       turn,
-      desc: 'Welcome to Die Wies\'n',
-      location: 'Eingang(Entrance)',
-      hp: player.hp
+      desc: 'Willkommen zum Oktoberfest',
+      location: 'Entrance'
     }
   ];
 
@@ -36,7 +35,7 @@ function playerService($q, $log, mapService) {
       if (!newLocation) {
         history.unshift({
           turn,
-          desc: 'You have run into a wall',
+          desc: 'Achtung! Verboden! Try Again',
           location: player.location,
           hp: player.hp
         });
@@ -45,7 +44,7 @@ function playerService($q, $log, mapService) {
 
       history.unshift({
         turn,
-        location: player.location,
+        location: newLocation,
         desc: mapService.mapData[newLocation].desc,
         hp: player.hp
       });

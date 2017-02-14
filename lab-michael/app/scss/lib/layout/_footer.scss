@@ -1,6 +1,8 @@
 @import "../theme/_theme";
 
 footer {
+  height: 2vw;
+  min-width: 100%;
   background: $brand-primary;
   color: $white;
   padding: $gutter-sm / 2;
