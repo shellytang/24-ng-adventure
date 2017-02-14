@@ -14,8 +14,8 @@ ngAdventure.controller('GamePadController', ['$log', 'playerService', GamePadCon
 function GamePadController($log, playerService) {
   $log.debug('GamePadController');
 
-  this.direction = ['north', 'south', 'east', 'west'];
-  this.moveDirection = this.direction[0];
+  this.directions = ['north', 'south', 'east', 'west'];
+  this.moveDirection = this.directions[0];
 
   this.movePlayer = function() {
     playerService.movePlayer(this.moveDirection)

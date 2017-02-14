@@ -43,9 +43,17 @@ function playerService($q, $log, mapService) {
         reject('no room in that direction');
       }
 
+      if(newLocation === 'pantry' || newLocation === 'bathroom') {
+        player.hp = player.hp - 3;
+      }
+
+      if(newLocation === 'corner') {
+        player.hp++;
+      }
+
       history.unshift({
         turn,
-        location: player.location,
+        location: newLocation,
         desc: mapService.mapData[newLocation].desc,
         hp: player.hp
       });

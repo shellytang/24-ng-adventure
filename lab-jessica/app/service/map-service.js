@@ -26,7 +26,7 @@ function mapService($log) {
       west: 'rug'
     },
     pantry: {
-      desc: 'Bark! Bark! Oh, no, you\'ve stumbled upon the annoying family dog, Teddy. You lose 2 of your nine lives.',
+      desc: 'Bark! Bark! Oh, no, you\'ve stumbled upon the annoying dog. You lose 3 of your nine lives.',
       south: 'kitchen',
       east: 'corner'
     },
@@ -36,7 +36,7 @@ function mapService($log) {
       west: 'pantry'
     },
     hallway: {
-      desc: 'Is there anything to eat in this house? Ah! What\'s that? There\'s something scurrying down the hallway!',
+      desc: 'Is there anything to eat in this house? What\'s that? There\'s something scurrying down the hallway!',
       north: 'corner',
       south: 'bedroom',
       west: 'kitchen'
@@ -48,11 +48,11 @@ function mapService($log) {
       east: 'bathroom'
     },
     bathroom: {
-      desc: 'Bark! Bark! Ugh, not again. You lose 1 of you nine lives.',
+      desc: 'Bark! Bark! Ugh, not again. You lose 3 of your nine lives.',
       west: 'bedroom'
     },
     closet: {
-      desc: 'You won! You\'ve found a mouse. NOMNOMNOM! It\'s time for another cat nap you productive animal.',
+      desc: 'You win! You\'ve found a mouse. NOMNOMNOM! It\'s time for another cat nap, you productive animal.',
       north: 'bedroom'
     }
   };
