@@ -35,4 +35,22 @@ function GamePadController($log, playerService) {
       $log.error(err);
     });
   };
+  this.exchangeGold = function() {
+    playerService.exchangeGold()
+    .then(gold => {
+      $log.log(`player bought boltcutters with ${gold} pieces of gold`);
+    })
+    .catch(err => {
+      $log.error(err);
+    });
+  };
+  this.freeScott = function() {
+    playerService.freeScott()
+    .then(scott => {
+      $log.log(`you have freed ${scott}`);
+    })
+    .catch(err => {
+      $log.error(err);
+    });
+  };
 }

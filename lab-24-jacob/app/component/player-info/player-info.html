@@ -15,6 +15,12 @@
       <span>{{ playerInfoCtrl.player.location }}</span>
     </li>
     <span>Description:</span>
-    <span>{{ playerInfoCtrl.player.desc }}</span>
+    <span>{{ playerInfoCtrl.player.msg }}</span>
+    <li>
+      <div ng-show="playerInfoCtrl.player.items.length">
+      <span>Items:</span>
+      <span>{{ playerInfoCtrl.player.items }}</span>
+    </div>
+  </li>
   </ul>
 </section>
