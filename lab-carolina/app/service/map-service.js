@@ -1,7 +1,7 @@
 'use strict';
 
 const angular = require('angular');
-const ngAdventure = angular.module('ngadventure');
+const ngAdventure = angular.module('ngAdventure');
 
 ngAdventure.factory('mapService', ['$log', mapService]);
 function mapService($log){

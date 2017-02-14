@@ -1,6 +1,4 @@
-'use strict';
-
-const HTMLPlugin = require('html-webpack-plugin');
+let HTMLPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: `${__dirname}/app/entry.js`,
@@ -16,13 +14,17 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
-      },
-      {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader',
+      },
+      {
+        test: /\.html$/,
+        use: 'html-loader',
       },
     ],
   },
