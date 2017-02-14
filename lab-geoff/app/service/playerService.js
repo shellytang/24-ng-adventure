@@ -10,15 +10,15 @@ function playerService($q, $log, mapService) {
   let turn = 0;
 
   let player = service.player = {
-    name:'test',
-    location:'test',
+    name:'Player One',
+    location:'entrance',
     hp: 10
   };
 
   let history = service.history = [
     {
       turn,
-      desc: 'Start of the maze',
+      desc: 'Find the key.',
       hp: player.hp
     }
   ];
@@ -43,6 +43,7 @@ function playerService($q, $log, mapService) {
       history.unshift({
         turn,
         desc: mapService.mapData[newLocation].desc,
+        location: player.location,
         hp: player.hp
       });
 
