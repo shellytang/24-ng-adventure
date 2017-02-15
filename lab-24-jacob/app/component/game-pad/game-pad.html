@@ -8,7 +8,7 @@
       </option>
     </select>
     <button type="button" ng-click="gamePadCtrl.takeGold()">Take Gold</button>
-    <button type="button" ng-click="gamePadCtrl.exchangeGold()" class="displayNone" id="marketDefault">Purchase boltcutters</button>
-    <button type="button" ng-click="gamePadCtrl.freeScott()" class="displayNone" id="jailButton">FREE SCOTT!</button>
+    <button type="button" ng-if="gamePadCtrl.checkMarket()" ng-click="gamePadCtrl.exchangeGold()">Purchase boltcutters</button>
+    <button type="button" ng-if="gamePadCtrl.checkJail()" ng-click="gamePadCtrl.freeScott()">FREE SCOTT!</button>
   </form>
 </section>

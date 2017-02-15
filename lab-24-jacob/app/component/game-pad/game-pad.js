@@ -19,7 +19,7 @@ function GamePadController($log, playerService) {
 
   this.movePlayer = function() {
     playerService.movePlayer(this.moveDirection)
-    .then( location => {
+    .then(location => {
       $log.log(`player currently at: ${location}`);
     })
     .catch( err => {
@@ -52,5 +52,19 @@ function GamePadController($log, playerService) {
     .catch(err => {
       $log.error(err);
     });
+  };
+  this.checkMarket = function() {
+    if (playerService.player.location === 'market') {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  this.checkJail = function() {
+    if(playerService.player.location === 'jail') {
+      return true;
+    } else {
+      return false;
+    }
   };
 }
