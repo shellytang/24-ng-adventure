@@ -2,14 +2,21 @@
   margin: 2%;
 }
 
-  ol {
-    list-style: none;
+ol, ul {
+  list-style: none;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   }
 
-    li {
-      margin-bottom: 2%;
-      padding: 5px;
-      border-radius: 5px;
-      color: black;
-      background-color: pink;
+li {
+  margin-bottom: 2%;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: #99CCFF;
       }
+
+#header {
+  background-color: #4598E6
+}

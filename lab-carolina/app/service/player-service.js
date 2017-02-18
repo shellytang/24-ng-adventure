@@ -42,7 +42,7 @@ function playerService($q, $log, mapService){
 
       history.unshift({
         turn,
-        location: player.location,
+        location: newLocation,
         desc: mapService.mapData[newLocation].desc,
       });
       player.location = newLocation;

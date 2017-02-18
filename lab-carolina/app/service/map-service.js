@@ -14,7 +14,7 @@ function mapService($log){
       desc: 'Oh my glob! You are going to be late to Princess Bubblegum\'s party!',
       north: 'path',
       south: 'trail',
-      east: 'candyKingdom',
+      east: 'CandyKingdom',
       west: 'lumpySpace',
     },
     iceMountains: {
@@ -22,7 +22,7 @@ function mapService($log){
       north: 'raggenbonKingdom',
       east: 'trail',
     },
-    candyKingdom: {
+    CandyKingdom: {
       desc: 'You\'ve made it to Candy Kingdom! Party on!',
     },
     raggenbonKingdom: {
