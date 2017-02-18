@@ -4,9 +4,6 @@
 
 ol, ul {
   list-style: none;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   }
 
 li {
@@ -19,4 +16,8 @@ li {
 
 #header {
   background-color: #4598E6
+}
+
+p {
+  padding-left: 10%;
 }

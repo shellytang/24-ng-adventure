@@ -24,3 +24,15 @@ section {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+h1 {
+  background: -webkit-linear-gradient(left, red, orange, green, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: pink;
+}
+
+img {
+  width: 50%;
+  padding-left: 25%;
+}
