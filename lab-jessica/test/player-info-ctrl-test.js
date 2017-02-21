@@ -1,8 +1,8 @@
 'use strict';
 
-require('./lib/test-setup.js');
-
-const angular = require('angular');
+// require('./lib/test-setup.js');
+//
+// const angular = require('angular');
 
 describe('Player Info Controller', function() {
   beforeEach(() => {
