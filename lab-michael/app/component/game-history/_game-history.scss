@@ -1,0 +1,41 @@
+@import "../../scss/lib/theme/_theme";
+
+.history {
+  max-width: 100%;
+  // max-height: 400px;
+  border: ridge 5px $silver / 2;
+  border-radius: 1em;
+  overflow: auto;
+  background: lighten($brand-primary, 10%);
+  color: lighten($silver, 25%);
+
+  h3 {
+    padding: $gutter-sm / 2;
+    font-size: 2vw;
+  }
+
+  span {
+    font-size: 1.5vw;
+    // line-height: 1.5em;
+
+    &:first-child {
+      color: $brand-secondary;
+      font-style: italic;
+    }
+
+    &:last-child {
+      margin-left: .5vw;
+      font-family: $font-secondary;
+    }
+  }
+
+  ul {
+    padding: $gutter-sm / 2;
+    margin-bottom: $gutter-sm / 2;
+    border-top: solid 1px $brand-secondary;
+
+    li {
+      // margin-bottom: $gutter-sm / 2;
+    }
+  }
+}

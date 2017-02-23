@@ -1,0 +1,23 @@
+@import "../theme/_theme";
+
+main {
+  min-height: 9em;
+  width: 80%;
+  margin: 5% 10%;
+  // margin-top: 5em;
+}
+
+section {
+  margin: 2% 0;
+}
+
+div.combine {
+  margin-top: 2em;
+  border: ridge 5px $brand-primary;
+  border-radius: 1em;
+  // min-height: 8em;
+  // border-style:
+  display: flex;
+  justify-content: space-around;
+  // margin-top: 2em;
+}
