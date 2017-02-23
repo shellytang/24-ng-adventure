@@ -1,0 +1,17 @@
+@import "../../scss/lib/theme/vars";
+
+.history {
+  float: left;
+  margin: 5%;
+  background: $color-main;
+  background: linear-gradient($color-tertiary, $color-main);
+  min-width: 45%;
+}
+ul {
+  margin: 5%;
+  border: solid .4vw $color-secondary;
+}
+li {
+  border-bottom: solid .025vw $color-secondary;
+  // margin: 5%;
+}
