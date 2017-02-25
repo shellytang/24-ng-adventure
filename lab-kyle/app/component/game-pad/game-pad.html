@@ -1,0 +1,16 @@
+<section class="game-pad">
+
+  <h2>Game Pad</h2>
+
+  <form ng-hide="gamePadCtrl.hidePad">
+    <select ng-model="gamePadCtrl.moveDirection">
+      <option ng-repeat="direction in gamePadCtrl.directions" value="{{ direction }}">
+        {{ direction }}
+      </option>
+    </select>
+    <button type="button" ng-click="gamePadCtrl.movePlayer()">Move Player</button>
+  </form>
+
+  <h3 ng-hide="gamePadCtrl.showResult">Result: {{ gamePadCtrl.result }}</h3>
+
+</section>

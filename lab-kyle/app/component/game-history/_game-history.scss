@@ -1,0 +1,20 @@
+@import '../../scss/lib/theme/_vars';
+
+game-history {
+
+  .game-history {
+    max-width: 95%;
+    background-color: $light;
+    margin: 3em 2em;
+
+    h2 {
+      background-color: $light  * 2;
+      padding: .5em;
+    }
+    .history {
+      font-size: 1.5em;
+      padding: .5em;
+      border-bottom: 1px solid black;
+    }
+  }
+}
