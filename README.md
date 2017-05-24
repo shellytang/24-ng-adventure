@@ -57,7 +57,9 @@ For this assignment you'll be creating a text based adventure game.
     * a component for the tracking the history of a game
   * Include a final destination room and alert the user when they have reached the end of the game
   * Be creative, do not use the same rooms as demonstrated in lecture, and have fun with this assignment!
+  * Test the default properties on your controllers
+  * Test the methods on your controllers
 
 ## Bonus
-* **2pts:** Test the default properties on your controllers
-* **2pts:** Test the methods on your controllers
+  * How far can you take your game??
+  * Wow us, and try for a couple extra points!
