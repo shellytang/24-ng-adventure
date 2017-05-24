@@ -1,4 +1,4 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 23 - ngAdventure
+![cf](https://i.imgur.com/7v5ASc8.png) Lab 24 - ngAdventure
 ======
 
 ## To Submit this Assignment
