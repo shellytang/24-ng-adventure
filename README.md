@@ -28,6 +28,7 @@
 #### Features Tasks
 For this assignment you'll be creating a text based adventure game.  
 
+  * Complete the application by finishing the logic for the Player History using the same component structure that we used for the game-pad and player-info components.
   * Your game should have at least 6 rooms that the player can move between.
   * Your game should have a form that enables your player to move between rooms (ex: `console`)
   * Manage the state of your map in a service
