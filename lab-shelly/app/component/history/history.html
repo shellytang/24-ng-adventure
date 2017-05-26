@@ -1,26 +1,27 @@
 <section>
   <h2>History</h2>
-  <p>Current</p>
-  <ul>
-    <li>
-      <span>Turn:</span>
-      <span>{{ historyCtrl.history[0].turn }}</span>
-    </li>
-    <li>
-      <span>Location:</span>
-      <span>{{ historyCtrl.history[0].location }}</span>
-    </li>
-    <li>
-      <span>Message:</span>
-      <span>{{ historyCtrl.history[0].desc }}</span>
-    </li>
+  <div>
+    <p>Current</p>
+    <ul>
+      <li>
+        <span>Turn:</span>
+        <span>{{ historyCtrl.history[0].turn }}</span>
+      </li>
+      <li>
+        <span>Location:</span>
+        <span>{{ historyCtrl.history[0].location }}</span>
+      </li>
+      <li>
+        <span>Message:</span>
+        <span>{{ historyCtrl.history[0].desc }}</span>
+      </li>
 
-    <li>
-      <span>hp:</span>
-      <span>{{ historyCtrl.history[0].hp }}</span>
-    </li>
-  </ul>
-
+      <li>
+        <span>hp:</span>
+        <span>{{ historyCtrl.history[0].hp }}</span>
+      </li>
+    </ul>
+  </div>
   <div ng-show="historyCtrl.history[1]">
     <p>Previous</p>
     <ul>
@@ -43,28 +44,3 @@
     </ul>
   </div>
 </section>
-
-<!-- <section>
-  <h2>history</h2>
-  <ul ng-repeat="history in historyCtrl.history">
-
-    <li>
-      <span>Turn:</span>
-      <span>{{ history.turn }}</span>
-    </li>
-    <li>
-      <span>Location:</span>
-      <span>{{ history.location }}</span>
-    </li>
-    <li>
-      <span>Message:</span>
-      <span>{{ history.desc }}</span>
-    </li>
-
-    <li>
-      <span>hp:</span>
-      <span>{{ history.hp }}</span>
-    </li>
-
-  </ul>
-</section> -->
