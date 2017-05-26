@@ -8,15 +8,6 @@ require('angular')
   controller: ['$log', 'playerService', function($log, playerService) {
     $log.debug('#history controller');
     this.history = playerService.history;
+
   }],
 });
-
-
-// let history = service.history = [
-//   {
-//     turn,
-//     desc: 'welcome to ngAdventure',
-//     location: 'cabin',
-//     hp: player.hp,
-//   },
-// ];

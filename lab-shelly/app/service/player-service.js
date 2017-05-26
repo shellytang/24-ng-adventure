@@ -6,20 +6,19 @@ require('angular')
   $log.debug('Player Service');
 
   let service = {};
-
   let turn = 0;
 
   let player = service.player = {
-    name: 'Thomas',
-    location: 'cabin',
-    hp: 2,
+    name: 'Zach',
+    location: 'office',
+    hp: 5,
   };
 
   let history = service.history = [
     {
       turn,
-      desc: 'welcome to ngAdventure',
-      location: 'cabin',
+      desc: 'Welcome to Zombie Escape',
+      location: 'office',
       hp: player.hp,
     },
   ];
@@ -32,18 +31,19 @@ require('angular')
       let newLocation = mapService.mapData[current][direction];
 
       if(!newLocation) {
+
         history.unshift({
           turn,
-          desc: 'you have run into a wall',
+          desc: 'Bad turn, you have run into traffic barricade',
           location: player.location,
           hp: --player.hp,
         });
-        return reject('no room in that direction');
+        return reject('No room in that direction');
       }
 
       history.unshift({
         turn,
-        location: player.location,
+        location: newLocation,
         desc: mapService.mapData[newLocation].desc,
         hp: ++player.hp,
       });

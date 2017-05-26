@@ -8,38 +8,38 @@ require('angular')
   let service = {};
 
   service.mapData = {
-    cabin: {
-      desc: 'message from cabin',
-      south: 'trail',
+    school: {
+      desc: 'You receive a Twitter nofication that zombies are on the loose nearby. Run home to your basement before the zombies get you!',
+      south: 'park',
     },
-    trail: {
-      desc: 'message from trail',
-      north: 'cabin',
-      east: 'gate',
-      south: 'pit',
+    park: {
+      desc: 'Good call, take a shortcut through the park.',
+      north: 'school',
+      east: 'bridge',
+      south: 'ditch',
     },
-    pit: {
-      desc: 'welcome to the pit',
-      north: 'trail',
+    ditch: {
+      desc: 'Whoops, you fell into a ditch.',
+      north: 'park',
     },
-    gate: {
-      desc: 'message from the gate',
-      west: 'trail',
-      east: 'castle',
+    bridge: {
+      desc: 'Cross the Fremont Bridge - you are almost home!',
+      west: 'park',
+      east: 'store',
     },
-    castle:  {
-      desc: 'message from the castle',
-      west: 'gate',
-      south: 'corridor',
+    store:  {
+      desc: 'Great idea - grab some zombie apocalypse supplies from QFC.',
+      west: 'bridge',
+      south: 'restaurant',
     },
-    corridor: {
-      desc: 'welcome to the corridor',
-      north: 'castle',
-      east: 'snackroom',
+    restaurant: {
+      desc: 'This running is making you hungry. Grab a burger and milkshake to-go.',
+      north: 'store',
+      east: 'basement',
     },
-    snackroom: {
-      desc: 'welcome to the snackroom',
-      west: 'corridor',
+    basement: {
+      desc: 'Congrats, you\'ve escaped the zombies and made it to your basement safely',
+      west: 'restaurant',
     },
   };
   return service;

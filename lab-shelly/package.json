@@ -2,7 +2,7 @@
   "name": "lab-shelly",
   "version": "1.0.0",
   "description": "lab 24-ng-adventure",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "dependencies": {
     "angular": "^1.6.4",
     "babel-core": "^6.24.1",
@@ -18,15 +18,23 @@
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.6.1",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.4",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.3",
     "webpack-dev-server": "^2.4.5"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "webpack",
     "lint": "eslint ./**",
-    "test": "karma start",
-    "test-watch": "karma start --no-single-run --auto-watch",
+    "test": "karma start --single-run",
+    "test-watch": "karma start",
     "watch": "webpack-dev-server --inline --hot"
   },
   "author": "shelly",

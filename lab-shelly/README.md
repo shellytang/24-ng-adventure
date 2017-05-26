@@ -5,7 +5,7 @@
 
 ngAdventure is a text-based adventure game that allows players to select from a dropdown form and navigate between rooms. The player stats and game history are displayed on the page.
 
-This lab builds on coursework in Angular JS, particularly components, services, directive, controllers, and dependency injection. Both controllers and services contain business logic; however, unlike controllers, services are reusable in other parts of an application and independent from the view. 
+This lab builds on coursework in Angular JS, particularly components, services, custom directives, controllers, and dependency injection. Both controllers and services contain business logic; however, unlike controllers, services are reusable in other parts of an application and independent from the view. 
 
 ## Installation
 * Clone this repository
