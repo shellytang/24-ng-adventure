@@ -7,7 +7,10 @@ require('angular')
   controllerAs: 'historyCtrl',
   controller: ['$log', 'playerService', function($log, playerService) {
     $log.debug('#history controller');
-    this.history = playerService.history;
+
+    this.$onInit = () => {
+      this.history = playerService.history;
+    };
 
   }],
 });

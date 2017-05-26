@@ -7,6 +7,9 @@ require('angular')
   controllerAs: 'playerInfoCtrl',
   controller: ['$log', 'playerService', function($log, playerService) {
     $log.debug('#player-info controller');
-    this.player = playerService.player;
+
+    this.$onInit = () => {
+      this.player = playerService.player;
+    };
   }],
 });

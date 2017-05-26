@@ -17,7 +17,7 @@ require('angular')
   let history = service.history = [
     {
       turn,
-      desc: 'Welcome to Zombie Escape',
+      desc: 'You receive a Twitter nofication that zombies are on the loose nearby. Can you make it home before the zombies get you?',
       location: 'office',
       hp: player.hp,
     },
@@ -34,7 +34,7 @@ require('angular')
 
         history.unshift({
           turn,
-          desc: 'Bad turn, you have run into traffic barricade',
+          desc: 'Bad turn, you have run into a traffic barricade',
           location: player.location,
           hp: --player.hp,
         });

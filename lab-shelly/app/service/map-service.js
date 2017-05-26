@@ -8,27 +8,27 @@ require('angular')
   let service = {};
 
   service.mapData = {
-    school: {
-      desc: 'You receive a Twitter nofication that zombies are on the loose nearby. Run home to your basement before the zombies get you!',
+    office: {
+      desc: 'You receive a twitter nofication that zombies are on the loose nearby. Can you make it home before the zombies get you?',
       south: 'park',
     },
     park: {
-      desc: 'Good call, take a shortcut through the park.',
+      desc: 'Good call - you have decided to take a shortcut through the park.',
       north: 'school',
       east: 'bridge',
       south: 'ditch',
     },
     ditch: {
-      desc: 'Whoops, you fell into a ditch.',
+      desc: 'Whoops, you were busy checking snapchat and fell into a ditch.',
       north: 'park',
     },
     bridge: {
-      desc: 'Cross the Fremont Bridge - you are almost home!',
+      desc: 'You have made it across the Fremont Bridge - you are almost home!',
       west: 'park',
       east: 'store',
     },
     store:  {
-      desc: 'Great idea - grab some zombie apocalypse supplies from QFC.',
+      desc: 'Grab some zombie apocalypse supplies from QFC.',
       west: 'bridge',
       south: 'restaurant',
     },

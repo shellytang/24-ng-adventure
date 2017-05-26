@@ -1,4 +1,50 @@
 <section>
+  <h2>History</h2>
+  <p>Current</p>
+  <ul>
+    <li>
+      <span>Turn:</span>
+      <span>{{ historyCtrl.history[0].turn }}</span>
+    </li>
+    <li>
+      <span>Location:</span>
+      <span>{{ historyCtrl.history[0].location }}</span>
+    </li>
+    <li>
+      <span>Message:</span>
+      <span>{{ historyCtrl.history[0].desc }}</span>
+    </li>
+
+    <li>
+      <span>hp:</span>
+      <span>{{ historyCtrl.history[0].hp }}</span>
+    </li>
+  </ul>
+
+  <div ng-show="historyCtrl.history[1]">
+    <p>Previous</p>
+    <ul>
+      <li>
+        <span>Turn:</span>
+        <span>{{ historyCtrl.history[1].turn }}</span>
+      </li>
+      <li>
+        <span>Location:</span>
+        <span>{{ historyCtrl.history[1].location }}</span>
+      </li>
+      <li>
+        <span>Message:</span>
+        <span>{{ historyCtrl.history[1].desc }}</span>
+      </li>
+      <li>
+        <span>hp:</span>
+        <span>{{ historyCtrl.history[1].hp }}</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- <section>
   <h2>history</h2>
   <ul ng-repeat="history in historyCtrl.history">
 
@@ -21,4 +67,4 @@
     </li>
 
   </ul>
-</section>
+</section> -->
