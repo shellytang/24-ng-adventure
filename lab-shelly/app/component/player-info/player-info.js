@@ -1,7 +1,5 @@
 'use strict';
 
-// require('./player-info.scss');
-
 require('angular')
 .module('ngAdventure')
 .component('playerInfo', {
