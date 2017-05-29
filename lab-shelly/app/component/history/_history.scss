@@ -1,9 +1,14 @@
 @import '../../scss/theme/theme';
 
-.playerinfo {
+.history {
 
   h2 {
     border-bottom: solid 2px $brand-secondary;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: $gutter-sm/4;
   }
 
   ul {
@@ -12,6 +17,5 @@
     li {
       padding-bottom: .7em;
     }
-
   }
 }

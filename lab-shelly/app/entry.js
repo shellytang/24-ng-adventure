@@ -1,6 +1,6 @@
 'use strict';
 
-// require('./scss/main.scss');
+require('./scss/main.scss');
 
 require('angular')
 .module('ngAdventure', []);
