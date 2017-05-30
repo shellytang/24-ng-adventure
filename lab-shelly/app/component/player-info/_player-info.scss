@@ -1,6 +1,11 @@
 @import '../../scss/theme/theme';
 
 .playerinfo {
+  width: 20%;
+  float: left;
+  margin-left: 2%;
+  // outline: 2px dotted blue;
+  padding: $gutter-sm;
 
   h2 {
     border-bottom: solid 2px $brand-secondary;

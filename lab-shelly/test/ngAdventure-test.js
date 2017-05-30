@@ -38,7 +38,7 @@ describe('Testing the ngAdventure App', function() {
         expect(this.historyCtrl.playerService.history[0].desc).toBe(expectedDesc);
       });
 
-      it('should show the history of previous turns', () => {
+      it('should show the history of current and previous turn', () => {
         let secondDesc = 'You have made it across the Fremont Bridge - you are almost home!';
         let firstDesc = 'Good call - you have decided to take a shortcut through the park.';
         this.historyCtrl.playerService.movePlayer('south');
@@ -106,7 +106,7 @@ describe('Testing the ngAdventure App', function() {
         expect(this.gamepadCtrl.playerService.player.hp).toEqual(6);
       });
 
-      it('after each move, correct info should be added to player history with most recent move first', () => {
+      it('correct info should be added to history after each move with most recent move first', () => {
         let secondExpectDesc = 'You have made it across the Fremont Bridge - you are almost home!';
         let firstExpectDesc = 'Good call - you have decided to take a shortcut through the park.';
         this.gamepadCtrl.playerService.movePlayer('south');
@@ -129,7 +129,6 @@ describe('Testing the ngAdventure App', function() {
     });
 
   });
-
 
   describe('testing the player-info component controller', function() {
 
@@ -170,12 +169,6 @@ describe('Testing the ngAdventure App', function() {
         this.playerInfoCtrl.playerService.movePlayer('east');
         expect(this.playerInfoCtrl.playerService.player.hp).toEqual(7);
       });
-
-      // it('should display and decrement the player hp with each unsuccessful move', () => {
-      //   this.playerInfoCtrl.playerService.movePlayer('south');
-      //   this.playerInfoCtrl.playerService.movePlayer('south');
-      //   expect(this.playerInfoCtrl.playerService.player.hp).toEqual(4);
-      // });
 
     });
   });

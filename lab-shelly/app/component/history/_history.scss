@@ -1,6 +1,10 @@
 @import '../../scss/theme/theme';
 
 .history {
+  width: 50%;
+  float: right;
+  margin-right: 10%;
+  padding: $gutter-sm;
 
   h2 {
     border-bottom: solid 2px $brand-secondary;
