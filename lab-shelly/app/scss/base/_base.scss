@@ -1,0 +1,41 @@
+@import '../theme/theme';
+
+html, body {
+  width: 100%;
+  font-family: $font-std;
+  color: $brand-secondary;
+  background: $brand-primary;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: $gutter-sm;
+  padding: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: $gutter-sm;
+}
+
+button {
+  width: $box-std/1.5;
+  padding: 1%;
+  background: $btn-primary;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 350ms all;
+  margin-bottom: 20px;
+  border-radius: $btn-border-radius;
+
+  &:hover {
+    background: $btn-hover;
+  }
+}
+
+select {
+  width: $box-std;
+  height: 3em;
+  margin-right: 1.2em;
+}

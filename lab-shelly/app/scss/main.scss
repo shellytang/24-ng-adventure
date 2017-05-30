@@ -1,0 +1,13 @@
+// ### BASE ###
+@import './base/reset';
+@import './base/base';
+
+// ### LAYOUT ###
+@import './layout/header';
+@import './layout/footer';
+@import './layout/content';
+
+// ### COMPONENTS ###
+@import '../component/game-pad/game-pad';
+@import '../component/player-info/player-info';
+@import '../component/history/history';

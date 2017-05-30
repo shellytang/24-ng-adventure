@@ -1,0 +1,46 @@
+<section class="history">
+  <h2>History</h2>
+  <div>
+    <h3>Current</h3>
+    <ul>
+      <li>
+        <span>Turn:</span>
+        <span>{{ historyCtrl.history[0].turn }}</span>
+      </li>
+      <li>
+        <span>Location:</span>
+        <span>{{ historyCtrl.history[0].location }}</span>
+      </li>
+      <li>
+        <span>Message:</span>
+        <span>{{ historyCtrl.history[0].desc }}</span>
+      </li>
+
+      <li>
+        <span>hp:</span>
+        <span>{{ historyCtrl.history[0].hp }}</span>
+      </li>
+    </ul>
+  </div>
+  <div ng-show="historyCtrl.history[1]">
+    <h3>Previous</h3>
+    <ul>
+      <li>
+        <span>Turn:</span>
+        <span>{{ historyCtrl.history[1].turn }}</span>
+      </li>
+      <li>
+        <span>Location:</span>
+        <span>{{ historyCtrl.history[1].location }}</span>
+      </li>
+      <li>
+        <span>Message:</span>
+        <span>{{ historyCtrl.history[1].desc }}</span>
+      </li>
+      <li>
+        <span>hp:</span>
+        <span>{{ historyCtrl.history[1].hp }}</span>
+      </li>
+    </ul>
+  </div>
+</section>
