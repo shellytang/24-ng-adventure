@@ -122,10 +122,6 @@ describe('Testing the ngAdventure App', function() {
         expect(this.gamepadCtrl.playerService.history[1].location).toBe('park');
         expect(this.gamepadCtrl.playerService.history[1].desc).toBe(firstExpectDesc);
       });
-    //   it('should return an error message with an unsuccessful move', () => {
-    //   });
-    //   it('should decrement player hp with an unsuccessful move', () => {
-    //   });
     });
 
   });
