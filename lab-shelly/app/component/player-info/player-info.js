@@ -11,5 +11,6 @@ require('angular')
     this.$onInit = () => {
       this.player = playerService.player;
     };
+
   }],
 });

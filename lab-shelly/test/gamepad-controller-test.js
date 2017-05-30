@@ -17,7 +17,6 @@
 //
 //   afterEach(() => this.$rootScope.$apply());
 //
-//
 //   describe('testing initial state', () => {
 //     it('the default direction should be set to "north"', () => {
 //       expect(this.gamepadCtrl.moveDirection).toBe('north');
@@ -32,9 +31,28 @@
 //   });
 //
 //   describe('testing the movePlayer method', () => {
+//
 //     it('should log the location of player', () =>{
 //       this.gamepadCtrl.playerService.movePlayer('south');
 //       expect(this.gamepadCtrl.playerService.player.location).toEqual('park');
 //     });
+//
+//     it('should increment the player hp with each successful move', () =>{
+//       this.gamepadCtrl.playerService.movePlayer('south');
+//       expect(this.gamepadCtrl.playerService.player.hp).toEqual(6);
+//     });
+//
+//     it('should increment the player turn count with each move', () =>{
+//       this.gamepadCtrl.playerService.movePlayer('south');
+//       expect(this.gamepadCtrl.playerService.history[0].turn).toEqual(1);
+//     });
+//
+//     xit('should return an error message with an unsuccessful move', () => {
+//
+//     });
+//
+//     xit('should decrement player hp with an unsuccessful move', () => {
+//     });
+//
 //   });
 // });
