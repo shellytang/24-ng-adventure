@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_game-pad.scss');
+
 require('angular')
 .module('ngAdventure')
 .component('gamePad', {
